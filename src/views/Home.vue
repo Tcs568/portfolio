@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section id="Home">
+    <h1 class="Home__title">{{ name }}</h1>
+    <h2 class="Home__description">{{ text }}</h2>
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  name: "Home",
+  data() {
+    return {
+      name: "Hello Wold！",
+      text: "by Honami Tanabe"
+    };
   }
-}
+};
 </script>
+
+<style lang="scss" scoped>
+// #Home {
+//   @at-root {
+//     .Home__title {
+//     }
+//     .Home__description {
+//     }
+//   }
+// }
+</style>
