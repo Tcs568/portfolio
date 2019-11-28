@@ -2,51 +2,72 @@
   <section id="Works">
     <h1 class="Works__title">Works</h1>
     <div class="WorksDetail">
-      <div class="WorksDetail__content" v-for="i in 4" :key="i">
-        <div class="WorkstDetail__humbnail">
-          <a href="https://placeholder.com">
-            <img src="https://via.placeholder.com/350" />
-          </a>
-        </div>
+      <div class="WorksDetail__content" @click="openModal(item)" v-for="item in items" :key="item">
+        <div class="WorkstDetail__humbnail">{{ item.humbnail }}</div>
         <div class="WorkstDetail__textContent">
-          <h2 class="WorkstDetail__title">{{ name }}</h2>
+          <h2 class="WorkstDetail__title">{{ item.title }}</h2>
           <div class="WorksDetail_meta">
-            <p class="WorksDetail__date">date</p>
+            <p class="WorksDetail__date">{{ item.date }}</p>
             <ul class="WorksDetail__tag">
-              <li class="WorksDetail__tagList">tag</li>
-              <li class="WorksDetail__tagList">tag</li>
+              <li class="WorksDetail__tagList">{{ item.tag }}</li>
             </ul>
           </div>
         </div>
-        <!-- modal -->
-        <Modal @close="closeModal" v-if="modal">
-          <p>Vue.js Modal Window!</p>
-          <template slot="footer">
-            <button @click="close">Close</button>
-          </template>
-        </Modal>
       </div>
+      <modal :val="postItem" v-if="showModal" @close="closeModal"></modal>
     </div>
   </section>
 </template>
-
 <script>
 import Modal from "@/components/Modal.vue";
 export default {
+  name: "works",
   components: {
     Modal
   },
   data() {
     return {
-      modal: false
+      showModal: false,
+      postItem: "",
+      items: [
+        {
+          humbnail: "ここに画像",
+          title: "作品1",
+          text: "作品2のcaption",
+          date: "20197/7~7/7",
+          tag: "PHP"
+        },
+        {
+          humbnail: "ここに画像",
+          title: "作品1",
+          text: "作品2のcaption",
+          date: "20197/7~7/7",
+          tag: "PHP"
+        },
+        {
+          humbnail: "ここに画像",
+          title: "作品1",
+          text: "作品2のcaption",
+          date: "20197/7~7/7",
+          tag: "PHP"
+        },
+        {
+          humbnail: "ここに画像",
+          title: "作品1",
+          text: "作品2のcaption",
+          date: "20197/7~7/7",
+          tag: "PHP"
+        }
+      ]
     };
   },
   methods: {
-    openModal: () => {
-      this.modal = true;
+    openModal(item) {
+      this.postItem = item;
+      this.showModal = true;
     },
-    closeModal: () => {
-      this.modal = false;
+    closeModal() {
+      this.showModal = false;
     }
   }
 };

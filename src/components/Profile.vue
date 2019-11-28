@@ -9,11 +9,9 @@
     </div>
     <ul class="Profile__snsLine">
       <li class="Profile___snsIcon">
+        <!-- 動的に生成する -->
         <span>
           <font-awesome-icon :icon="['fab', 'github']" />
-        </span>
-        <span>
-          <font-awesome-icon :icon="['fab', 'twitter']" />
         </span>
       </li>
     </ul>

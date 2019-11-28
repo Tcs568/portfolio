@@ -55,6 +55,11 @@ dl {
 li {
   list-style-type: none;
 }
+img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 @media (min-width: 560px) {
   h1 {
     font-size: 3.6rem;
