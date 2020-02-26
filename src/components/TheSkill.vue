@@ -31,7 +31,7 @@ export default {
       subtitle: ["FrontEnd", "BackEnd", "Other"],
       frontSkills: [
         { label: "HTML5", percentage: 80 },
-        { label: "CSS3/Sass", percentage: 80 },
+        { label: "CSS3/SCSS", percentage: 80 },
         { label: "Bootstrap4", percentage: 60 },
         { label: "Javascript", percentage: 60 },
         { label: "jQuery", percentage: 60 },
@@ -43,8 +43,8 @@ export default {
         { label: "WordPress", percentage: 20 }
       ],
       otherSkills: [
-        { label: "Git", percentage: 40 },
         { label: "MySQL", percentage: 20 },
+        { label: "Git", percentage: 40 },
         { label: "Gulp", percentage: 20 }
       ]
     };
@@ -67,10 +67,17 @@ export default {
 .skills {
   padding-top: 14px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .skillsBar {
   padding-bottom: 8px;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 560px) {
+  .skillsBar {
+    width: 50%;
+  }
 }
 </style>

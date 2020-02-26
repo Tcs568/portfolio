@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: "TheTop",
   data() {
     return {
       text: "Hi there! Welcome to my portfolio page"
@@ -20,6 +21,7 @@ export default {
 .top {
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 @keyframes text-in {
   0% {

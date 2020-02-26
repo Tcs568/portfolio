@@ -27,8 +27,9 @@ export default {
 
 <style scoped>
 .contact {
-  padding-top: 20px;
+  padding-top: 14px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .contact__box {
   width: 240px;

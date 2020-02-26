@@ -34,6 +34,7 @@ export default {
 .history {
   padding-top: 20px;
   padding-bottom: 14px;
+  text-align: center;
 }
 .history__contents {
   display: flex;

@@ -2,27 +2,25 @@
   <section class="works">
     <TitleHead :title="title" />
     <el-row>
-      <el-col v-for="item in works" :key="item.id">
-        <el-card :body-style="{ padding: '8px' }">
+      <el-col v-for="item in works" :key="item.id" :span="24">
+        <el-card :body-style="{ padding: '16px'}" shadow="hover">
           <img :src="item.img" />
-          <div style="padding: 10px;">
+          <h1>
             <a :href="item.url" target="_blank">{{ item.title }}</a>
-            <el-tag class="tag" type="info" effect="plain">{{ item.tag }}</el-tag>
-            <div class="bottom clearfix">
-              <el-collapse accordion>
-                <el-collapse-item name="1">
-                  <template slot="title">
-                    <span>description</span>
-                  </template>
-                  <time class="time">制作時間 : {{ item.date }}</time>
-                  <div>{{ item.description }}</div>
-                  <a :href="item.codeLink" target="_blank">
-                    <font-awesome-icon :icon="['fab', 'github']" />
-                  </a>
-                </el-collapse-item>
-              </el-collapse>
-            </div>
-          </div>
+          </h1>
+          <el-tag class="tag" type="info" effect="plain">{{ item.tag }}</el-tag>
+          <el-collapse accordion>
+            <el-collapse-item class="collapse">
+              <template slot="title">
+                <span>description</span>
+              </template>
+              <time class="time">制作時間 : {{ item.date }}</time>
+              <div>{{ item.description }}</div>
+              <a :href="item.codeLink" target="_blank">
+                <font-awesome-icon :icon="['fab', 'github']" />
+              </a>
+            </el-collapse-item>
+          </el-collapse>
         </el-card>
       </el-col>
     </el-row>
@@ -40,17 +38,17 @@ export default {
       title: "Works",
       works: [
         {
-          title: "ショッピングサイト(フロント)",
-          date: "2020/01/01",
+          title: "ショッピングサイト(フロントエンド)",
+          date: "40時間",
           img: "/img/profile.png",
           url: "https://tcs568.github.io/ecsite_front/",
           codeLink: "https://github.com/Tcs568/ecsite_front",
-          tag: "HTML5/Sass/Javascript/jQuery",
-          description: "説明です説明です説明です説明です説明です説明です"
+          tag: "HTML/SCSS/Javascript/jQuery",
+          description: "命名規則にBEMを利用しました"
         },
         {
-          title: "ブログサイト",
-          date: "2020/01/01",
+          title: "ブログテーマ",
+          date: "40時間",
           img: "/img/profile.png",
           url: "",
           tag: "WordPress",
@@ -58,7 +56,7 @@ export default {
         },
         {
           title: "掲示板",
-          date: "2020/01/01",
+          date: "40時間",
           img: "/img/profile.png",
           url: "",
           tag: "Laravel",
@@ -66,18 +64,10 @@ export default {
         },
         {
           title: "ポートフォリオサイト",
-          date: "2020/01/01",
+          date: "45時間",
           img: "/img/profile.png",
           url: "",
           tag: "Vue.js",
-          description: "説明です説明です説明です説明です説明です説明です"
-        },
-        {
-          title: "アプリ",
-          date: "24時間",
-          img: "/img/profile.png",
-          url: "",
-          tag: "Javascript",
           description: "説明です説明です説明です説明です説明です説明です"
         }
       ]
@@ -90,7 +80,21 @@ export default {
 .works {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
+
+@media screen and (min-width: 560px) {
+  .works {
+    width: 30%;
+  }
+}
+
+.el-card {
+  margin-bottom: 20px;
+}
+
 .tag {
   display: block;
 }

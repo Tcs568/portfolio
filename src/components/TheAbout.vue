@@ -10,7 +10,7 @@ import Skill from "@/components/TheSkill";
 import History from "@/components/TheHistory";
 
 export default {
-  name: "App",
+  name: "TheAbout",
   components: {
     Skill,
     History
