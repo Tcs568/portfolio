@@ -1,0 +1,65 @@
+html {
+  font-family: 'Helvetica Neue','Helvetica','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  color: #3C3C3C;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  background: #f9fcfb;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+p,
+li,
+dt,
+dl {
+  line-height: 1.6;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+* {
+  outline: none;
+  text-decoration: none;
+}
+
+a,a:visited {
+  color: #3C3C3C;
+}
+
+a:hover {
+  color: #909399;
+}
