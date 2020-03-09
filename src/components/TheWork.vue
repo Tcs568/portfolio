@@ -40,35 +40,42 @@ export default {
         {
           title: "ショッピングサイト(フロントエンド)",
           date: "40時間",
-          img: "/img/profile.png",
+          img: "/img/ecsite_front.jpg",
           url: "https://tcs568.github.io/ecsite_front/",
           codeLink: "https://github.com/Tcs568/ecsite_front",
           tag: "HTML/SCSS/Javascript/jQuery",
-          description: "命名規則にBEMを利用しました"
-        },
-        {
-          title: "ブログテーマ",
-          date: "40時間",
-          img: "/img/profile.png",
-          url: "",
-          tag: "WordPress",
-          description: "説明です説明です説明です説明です説明です説明です"
-        },
-        {
-          title: "掲示板",
-          date: "40時間",
-          img: "/img/profile.png",
-          url: "",
-          tag: "Laravel",
-          description: "説明です説明です説明です説明です説明です説明です"
+          description:
+            "レスポンシブ対応のウェブサイトを制作しました。保守性の高いコーディングのためにBRM名命名規則を利用しました。"
         },
         {
           title: "ポートフォリオサイト",
           date: "45時間",
-          img: "/img/profile.png",
-          url: "",
+          img: "/img/works/portfolio.jpg",
+          url: "https://portfolio-ce086.firebaseapp.com/",
+          codeLink: "https://github.com/Tcs568/portfolio",
           tag: "Vue.js",
-          description: "説明です説明です説明です説明です説明です説明です"
+          description:
+            "このポートフォリオサイトです。Vue RouterでSPAを実装、単一ファイルコンポーネントで構成しました。"
+        },
+        {
+          title: "BBS",
+          date: "40時間",
+          img: "/img/works/laravel_bbs.jpg",
+          url: "https://laravel-bbs00.herokuapp.com/",
+          codeLink: "https://github.com/Tcs568/laravel_bbs",
+          tag: "Laravel",
+          description:
+            "BBSで基礎的なLaravelでのCRUDの構築を学びました。認証機能を利用して、管理者と一般ユーザを個別に管理する機能を実装しました。"
+        },
+        {
+          title: "ブログテーマ",
+          date: "40時間",
+          img: "/img/works/wp_blog.jpg",
+          url: "https://wp-blog-8dae8.firebaseapp.com",
+          codeLink: "https://github.com/Tcs568/wp_blog",
+          tag: "WordPress/jQuery/Bootstrap4",
+          description:
+            "WordPressでブログテーマを自作しました。コンテツ上部の商品画像は楽天APIから取得しました。"
         }
       ]
     };

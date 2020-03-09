@@ -33,8 +33,8 @@ export default {
         { label: "HTML5", percentage: 80 },
         { label: "CSS3/SCSS", percentage: 80 },
         { label: "Bootstrap4", percentage: 60 },
-        { label: "Javascript", percentage: 60 },
-        { label: "jQuery", percentage: 60 },
+        { label: "Javascript", percentage: 50 },
+        { label: "jQuery", percentage: 50 },
         { label: "Vue.js", percentage: 20 }
       ],
       backSkills: [
@@ -45,7 +45,8 @@ export default {
       otherSkills: [
         { label: "MySQL", percentage: 20 },
         { label: "Git", percentage: 40 },
-        { label: "Gulp", percentage: 20 }
+        { label: "Gulp", percentage: 10 },
+        { label: "Vagrant/VirtualBox", percentage: 10 }
       ]
     };
   },
